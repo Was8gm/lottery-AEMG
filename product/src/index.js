@@ -16,6 +16,7 @@ const BASE_HEIGHT = 1080;
 
 let TOTAL_CARDS,
   btns = {
+    title_1:document.querySelector("#title_1"),
     enter: document.querySelector("#enter"),
     lotteryBar: document.querySelector("#lotteryBar"),
     lottery: document.querySelector("#lottery")
@@ -305,11 +306,13 @@ function bindEvent() {
 function switchScreen(type) {
   switch (type) {
     case "enter":
+      btns.title_1.classList.remove("none");
       btns.enter.classList.remove("none");
       btns.lotteryBar.classList.add("none");
       transform(targets.table, 2000);
       break;
     default:
+      btns.title_1.classList.add("none");
       btns.enter.classList.add("none");
       btns.lotteryBar.classList.remove("none");
       transform(targets.sphere, 2000);
