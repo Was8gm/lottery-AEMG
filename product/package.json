@@ -1,0 +1,16 @@
+{
+  "name": "lucky",
+  "version": "1.0.0",
+  "description": "抽奖",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && cd dist && node ../../server/index.js 8888",
+    "serve": "vite --open",
+    "build": "vite build"
+  },
+  "author": "moshang",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.4.11"
+  }
+}

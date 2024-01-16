@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lottery</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+  </head>
+
+  <body>
+    <script src="./lib/three.min.js"></script>
+    <script src="./lib/tween.min.js"></script>
+    <script src="./lib/TrackballControls.js"></script>
+    <script src="./lib/CSS3DRenderer.js"></script>
+    <script src="./lib/ajax.js"></script>
+    <script type="module" src="./src/index.js"></script>
+
+    <div class="canvas-box">
+      <canvas id="canvas">Your brower doesn't support canvas</canvas>
+    </div>
+
+    <div class="music">
+      <audio id="music" src="./data/music.mp3" class="music-item" loop></audio>
+      <div id="musicBox" class="music-box" title="播放/暂停背景音乐">Music</div>
+    </div>
+
+    <div id="prizeBar"></div>
+
+    <div id="container"></div>
+
+    <div id="menu">
+      <button id="enter">Start</button>
+      <div id="lotteryBar" class="none">
+        <button id="lottery">Lottery</button>
+        <button id="reLottery">Relottery</button>
+        <div class="fixed-bar">
+          <button id="save" class="fixed-btn">Export Result</button>
+          <button id="reset" class="fixed-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="qipao-container"></div>
+  </body>
+</html>
