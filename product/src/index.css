@@ -598,3 +598,16 @@ button:active {
   font-weight: 800;
   z-index: 999;
 }
+
+@keyframes title_fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.title_disappear {
+  animation: fadeOut 0.5s ease-in-out;
+}
