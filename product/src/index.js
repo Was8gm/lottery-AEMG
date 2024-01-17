@@ -14,9 +14,9 @@ const ROTATE_TIME = 3000;
 const ROTATE_LOOP = 1000;
 const BASE_HEIGHT = 1080;
 
+
 let TOTAL_CARDS,
   btns = {
-    title_1:document.querySelector("#title_1"),
     enter: document.querySelector("#enter"),
     lotteryBar: document.querySelector("#lotteryBar"),
     lottery: document.querySelector("#lottery")
@@ -91,11 +91,11 @@ function initAll() {
           continue;
         }
         currentPrizeIndex = prizeIndex;
+        showPrizeList(currentPrizeIndex);
         currentPrize = basicData.prizes[currentPrizeIndex];
         break;
       }
 
-      showPrizeList(currentPrizeIndex);
       let curLucks = basicData.luckyUsers[currentPrize.type];
       setPrizeData(currentPrizeIndex, curLucks ? curLucks.length : 0, true);
     }
@@ -306,13 +306,17 @@ function bindEvent() {
 function switchScreen(type) {
   switch (type) {
     case "enter":
-      btns.title_1.classList.remove("none");
+      document.getElementById('remain_bar').classList.add("none");
+      document.getElementById('remain_blank').classList.remove("none");
+      document.getElementById('title_1').classList.remove("none");
       btns.enter.classList.remove("none");
       btns.lotteryBar.classList.add("none");
       transform(targets.table, 2000);
       break;
     default:
-      btns.title_1.classList.add("none");
+      document.getElementById('remain_bar').classList.remove("none");
+      document.getElementById('remain_blank').classList.add("none");
+      document.getElementById('title_1').classList.add("none");
       btns.enter.classList.add("none");
       btns.lotteryBar.classList.remove("none");
       transform(targets.sphere, 2000);
@@ -345,7 +349,7 @@ function createCard(user, isBold, id, showTable) {
   } else {
     element.className = "element";
     element.style.backgroundColor =
-      "rgba(0,127,127," + (Math.random() * 0.7 + 0.25) + ")";
+      "rgba(253, 253, 0," + (Math.random() * 0.7 + 0.25) + ")";
   }
   //添加公司标识
   element.appendChild(createElement("company", COMPANY));
@@ -514,7 +518,7 @@ function selectCard(duration = 600) {
 
   let text = currentLuckys.map(item => item[0]);
   addQipao(
-    `Congratulate to ${text.join("、")} who wins the${currentPrize.title}!`
+    `Congratulate to ${text.join("、")} who wins the ${currentPrize.title}!`
   );
 
   selectedCardIndex.forEach((cardIndex, index) => {
@@ -721,7 +725,7 @@ function changeCard(cardIndex, user) {
 function shine(cardIndex, color) {
   let card = threeDCards[cardIndex].element;
   card.style.backgroundColor =
-    color || "rgba(0,127,127," + (Math.random() * 0.7 + 0.25) + ")";
+    color || "rgba(253, 253, 0," + (Math.random() * 0.7 + 0.25) + ")";
 }
 
 /**

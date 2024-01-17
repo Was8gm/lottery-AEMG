@@ -78,7 +78,8 @@
       initializeStars();
     }
     if (warp == 0) {
-      c.fillStyle = "rgba(0,10,20,1)";
+      //球体颜色背景
+      c.fillStyle = "rgba(244, 209, 103)";
       c.fillRect(0, 0, canvas.width, canvas.height);
     }
     c.fillStyle = "rgba(209, 255, 255, " + radius + ")";

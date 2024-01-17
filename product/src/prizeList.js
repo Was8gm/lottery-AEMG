@@ -155,11 +155,12 @@ function setPrizes(pri) {
 
 function showPrizeList(currentPrizeIndex) {
   let currentPrize = prizes[currentPrizeIndex];
+  
   if (currentPrize.type === defaultType) {
     currentPrize.count === "Unlimited";
   }
-  let htmlCode = `<div class="prize-mess">Now lottery<label id="prizeType" class="prize-shine">${currentPrize.text}</label><label id="prizeText" class="prize-shine">${currentPrize.title}</label>，remain<label id="prizeLeft" class="prize-shine">${currentPrize.count}</label> </div><ul class="prize-list">`;
-  prizes.forEach(item => {
+  let htmlCode = `<div id="remain_bar"><div class="prize-mess">Now lottery<label id="prizeType" class="prize-shine">${currentPrize.text}</label><label id="prizeText" class="prize-shine">${currentPrize.title}</label>，remain<label id="prizeLeft" class="prize-shine">${currentPrize.count}</label> </div></div><div id="remain_blank"><br><br></div><ul class="prize-list">`;
+    prizes.forEach(item => {
     if (item.type === defaultType) {
       return true;
     }
@@ -198,7 +199,7 @@ function showPrizeList(currentPrizeIndex) {
 function resetPrize(currentPrizeIndex) {
   prizeElement = {};
   lasetPrizeIndex = currentPrizeIndex;
-  showPrizeList(currentPrizeIndex);
+  showPrizeList(currentPrizeIndex,false);
 }
 
 let setPrizeData = (function () {

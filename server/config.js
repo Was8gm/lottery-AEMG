@@ -31,7 +31,7 @@ const prizes = [
     type: 3,
     count: 6,
     text: "Second Prize",
-    title: "华为 Mate30",
+    title: "Huawei Mate30",
     img: "../img/huawei.png"
   },
   {
@@ -52,7 +52,7 @@ const prizes = [
     type: 6,
     count: 8,
     text: "Fifth Prize",
-    title: "Kindle Kindle Kindle",
+    title: "Kindle",
     img: "../img/kindle.jpg"
   },
   {

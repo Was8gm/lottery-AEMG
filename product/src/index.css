@@ -58,16 +58,16 @@ a {
 .element {
   width: 16vh;
   height: 20vh;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
-  border: 1px solid rgba(127, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(242, 255, 0, 0.975);
+  border: 1px solid rgba(255,202, 127, 0.25);
   text-align: center;
   cursor: default;
   transition: background-color 0.3s ease-in;
 }
 
 .element:hover {
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.75);
-  border: 1px solid rgba(127, 255, 255, 0.75);
+  box-shadow: 0 0 12px rgba(255,115,0);
+  border: 1px solid rgba(241,95,50,0.89);
 }
 
 .element .company {
@@ -76,7 +76,7 @@ a {
   right: 0;
   width: 100%;
   font-size: 2vh;
-  color: rgba(127, 255, 255, 0.75);
+  color: white;
 }
 
 .element .name {
@@ -87,7 +87,7 @@ a {
   font-size: 3vh;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.75);
-  text-shadow: 0 0 1vh rgba(0, 255, 255, 0.95);
+  text-shadow: 0 0 1vh rgba(255, 153, 0, 0.95);
 }
 
 .element .details {
@@ -96,13 +96,13 @@ a {
   left: 0;
   right: 0;
   font-size: 1.6vh;
-  color: rgba(127, 255, 255, 0.75);
+  color: rgba(241,95,50,0.89);
 }
 
 button {
-  color: rgba(127, 255, 255, 0.75);
+  color: rgba(241,95,50,0.89);
   background: transparent;
-  outline: 1px solid rgba(127, 255, 255, 0.75);
+  outline: 1px solid rgba(241,95,50,0.89);
   border: 0;
   padding: 1.6vh 4vh;
   margin: 0 4.6vh;
@@ -112,12 +112,11 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 255, 255, 0.5);
+  background-color: rgba(255,132, 0, 0.975);
 }
 
 button:active {
-  color: #000000;
-  background-color: rgba(0, 255, 255, 0.75);
+  background-color: rgba(255,115,0);
 }
 
 .highlight {
@@ -171,10 +170,10 @@ button:active {
   line-height: 2.2vh;
   border-radius: 1vh;
   box-sizing: border-box;
-  background-color: rgba(0, 127, 127, 0.37);
-  box-shadow: 0 0 4px rgba(0, 255, 255, 0.5);
-  border: 1px solid rgba(127, 255, 255, 0.25);
-  color: rgba(127, 255, 255, 0.75);
+  background-color: rgb(255, 77, 0);
+  box-shadow: 0 0 4px rgba(255,132, 0, 0.975);
+  border: 1px solid rgba(255,202, 127, 0.25);
+  color: rgba(241,95,50,0.89);
 }
 
 .dan-mu.active {
@@ -203,9 +202,9 @@ button:active {
   justify-content: center;
   border-radius: 4px;
   flex-wrap: nowrap;
-  background-color: rgba(0, 127, 127, 0.37);
-  border: 1px solid rgba(127, 255, 255, 0.25);
-  color: rgba(127, 255, 255, 0.75);
+  background-color: rgb(255, 77, 0);
+  border: 1px solid rgba(255,202, 127, 0.25);
+  color: rgba(255, 255, 255, 0.89);
   width: 30vh;
   height: 10vh;
   box-sizing: border-box;
@@ -218,7 +217,7 @@ button:active {
   margin-right: 1.2vh;
   border-radius: 50%;
   background-color: #fff;
-  text-shadow: 0 0 1vh rgba(0, 255, 255, 0.95);
+  text-shadow: 0 0 1vh rgba(255, 174, 0, 0.95);
   overflow: hidden;
 }
 
@@ -351,7 +350,7 @@ button:active {
 }
 
 .shine {
-  box-shadow: 0 0 15px 0 rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 15px 0 rgba(255,132, 0, 0.975);
   transform: scale(1.2);
   transform-origin: left center;
   position: relative;
@@ -384,7 +383,7 @@ button:active {
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, #f49803);
   animation: animate1 1s linear infinite
 }
 
@@ -404,7 +403,7 @@ button:active {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #f49803);
   animation: animate2 1s linear infinite;
   animation-delay: .25s
 }
@@ -425,7 +424,7 @@ button:active {
   right: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #f49803);
   animation: animate3 1s linear infinite;
   animation-delay: .50s
 }
@@ -446,7 +445,7 @@ button:active {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, #f49803);
   animation: animate4 1s linear infinite;
   animation-delay: .75s
 }
@@ -478,7 +477,7 @@ button:active {
 .prize-shine {
   font-size: 5vh;
   font-weight: bold;
-  color: #db5c58;
+  color: rgb(255, 77, 0);
   vertical-align: middle;
   padding: 0 6px;
 }
@@ -499,8 +498,9 @@ button:active {
   margin: 4px 0;
   box-sizing: border-box;
   font-size: 14px;
-  background-color: rgba(127, 255, 255, 0.25);
-  color: rgba(127, 255, 255, 0.75);
+  background-color: rgba(255,202, 127, 0.25);
+  color: rgba(241,95,50,0.89);
+  border: 2px rgba(241,95,50,0.89);
 }
 
 .music {
@@ -515,9 +515,11 @@ button:active {
   opacity: 0;
 }
 
-.music-box {
-  width: 5vh;
-  height: 5vh;
+
+.music-box img{
+  width: 8vh;
+  height: 8vh;
+  /*
   border-radius: 50%;
   text-align: center;
   line-height: 5vh;
@@ -526,7 +528,9 @@ button:active {
   cursor: pointer;
   background-color: rgba(253, 105, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.5);
+  */
 }
+
 
 .rotate-active {
   animation: rotate 4s linear infinite;
@@ -561,7 +565,7 @@ button:active {
 
 #lottery {
   animation: breath 1.6s linear infinite;
-  box-shadow: 0px 0px 15px rgb(127 255 255 / 75%);
+  box-shadow: 0px 0px 15px rgb(255, 225, 127);
 }
 
 @keyframes breath {
@@ -580,19 +584,17 @@ button:active {
     opacity: 0.8;
   }
 }
-.title_2
-{
+#title_1 {
   position: absolute;
-  color: rgba(127, 255, 255, 0.75);
+  top: 7%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 0, 0, 0.943);
   background: transparent;
-  outline: 1px solid rgba(127, 255, 255, 0.75);
+  outline: 3px solid rgba(241, 95, 50, 0.89);
   border: 0;
   padding: 1.6vh 4vh;
-  font-size: 2vh;
-  font-weight: bold;
-  margin-left:40%;
-  margin-bottom: 50%;
-  z-index: 999;
   font-size: xx-large;
   font-weight: 800;
+  z-index: 999;
 }
