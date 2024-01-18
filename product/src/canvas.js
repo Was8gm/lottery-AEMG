@@ -18,8 +18,8 @@
 
   var c = canvas.getContext("2d");
 
-  var numStars = 800;
-  var radius = "0." + Math.floor(Math.random() * 9) + 1;
+  var numStars = 3800;//800 origin
+  var radius = "1.3" + Math.floor(Math.random() * 9) + 1.5;
   var focalLength = canvas.width * 2;
   var warp = 0;
   var centerX, centerY;
@@ -79,10 +79,12 @@
     }
     if (warp == 0) {
       //球体颜色背景
-      c.fillStyle = "rgba(0,10,20,1)";
+      // c.fillStyle = "rgba(0,10,20,1)";
+      c.fillStyle = "rgba(223,231,243,1)";
       c.fillRect(0, 0, canvas.width, canvas.height);
     }
-    c.fillStyle = "rgba(209, 255, 255, " + radius + ")";
+    // c.fillStyle = "rgba(209, 255, 255, " + radius + ")";
+    c.fillStyle = "rgba(0, 109, 193, " + radius + ")";
     for (i = 0; i < numStars; i++) {
       star = stars[i];
 
@@ -93,7 +95,8 @@
       pixelRadius = 1 * (focalLength / star.z);
 
       c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
-      c.fillStyle = "rgba(209, 255, 255, " + star.o + ")";
+          // c.fillStyle = "rgba(209, 255, 255, " + star.o + ")";---orign
+          c.fillStyle = "rgba(96, 186, 255, " + star.o + ")";
       //c.fill();
     }
   }
