@@ -303,20 +303,20 @@ function bindEvent() {
   window.addEventListener("resize", onWindowResize, false);
 }
 
+
+
 function switchScreen(type) {
   switch (type) {
     case "enter":
-      document.getElementById('remain_bar').classList.add("none");
-      document.getElementById('remain_blank').classList.remove("none");
-      document.getElementById('title_1').classList.remove("none");
+      document.getElementById('remain_bar').classList.remove("bar_appear");
+      document.getElementById('title_1').classList.remove("title_disappear");
       btns.enter.classList.remove("none");
       btns.lotteryBar.classList.add("none");
       transform(targets.table, 2000);
       break;
     default:
-      document.getElementById('remain_bar').classList.remove("none");
-      document.getElementById('remain_blank').classList.add("none");
-      document.getElementById('title_1').classList.add("none");
+      document.getElementById('remain_bar').classList.add("bar_appear");
+      document.getElementById('title_1').classList.add("title_disappear");
       btns.enter.classList.add("none");
       btns.lotteryBar.classList.remove("none");
       transform(targets.sphere, 2000);

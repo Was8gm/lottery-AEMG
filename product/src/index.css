@@ -505,8 +505,8 @@ button:active {
 
 .music {
   position: fixed;
-  top: 3vh;
-  right: 4vh;
+  left: 2vh;
+  bottom: 2vh;
   z-index: 5;
 }
 
@@ -516,10 +516,9 @@ button:active {
 }
 
 
-.music-box img{
-  width: 8vh;
-  height: 8vh;
-  /*
+.music-box {
+  width: 5vh;
+  height: 5vh;
   border-radius: 50%;
   text-align: center;
   line-height: 5vh;
@@ -528,9 +527,19 @@ button:active {
   cursor: pointer;
   background-color: rgba(253, 105, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  */
 }
 
+.logo{
+  display: block !important;
+  position: fixed;
+  right: 3vh;
+  top: 4vh;
+  z-index: 5;
+}
+
+.logo img{
+  width: 15vh;
+}
 
 .rotate-active {
   animation: rotate 4s linear infinite;
@@ -609,5 +618,27 @@ button:active {
 }
 
 .title_disappear {
-  animation: fadeOut 0.5s ease-in-out;
+  animation: fadeOut 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bar_fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bar_appear{
+  animation: fadeIn 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#remain_bar{
+  opacity: 0;
 }

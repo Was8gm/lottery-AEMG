@@ -47,20 +47,6 @@ const prizes = [
     text: "Fourth Prize",
     title: "Dajang Drone",
     img: "../img/spark.jpg"
-  },
-  {
-    type: 6,
-    count: 8,
-    text: "Fifth Prize",
-    title: "Kindle",
-    img: "../img/kindle.jpg"
-  },
-  {
-    type: 7,
-    count: 11,
-    text: "Sixth Prize",
-    title: "Bluetooth Earphone",
-    img: "../img/edifier.jpg"
   }
 ];
 
