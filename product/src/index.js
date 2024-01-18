@@ -349,7 +349,7 @@ function createCard(user, isBold, id, showTable) {
   } else {
     element.className = "element";
     element.style.backgroundColor =
-      "rgba(253, 253, 0," + (Math.random() * 0.7 + 0.25) + ")";
+    "rgba(255, 195, 91," + (Math.random() * 0.7 + 0.55) + ")";
   }
   //添加公司标识
   element.appendChild(createElement("company", COMPANY));
@@ -725,7 +725,7 @@ function changeCard(cardIndex, user) {
 function shine(cardIndex, color) {
   let card = threeDCards[cardIndex].element;
   card.style.backgroundColor =
-    color || "rgba(253, 253, 0," + (Math.random() * 0.7 + 0.25) + ")";
+  color || "rgba(253, 175, 37," + (Math.random() * 0.9 + 0.15) + ")";
 }
 
 /**
