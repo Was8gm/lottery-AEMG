@@ -7,8 +7,8 @@ Thanks for the origin developers contribution.
 I just did some style changes.
 so  probably it till has a similar way in operation
 # Preview
-[!image]https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Page.png
-[!image]https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Page2.png
+![image]https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Page.png
+![image]https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Page2.png
 # Technology Stack
 Technology stack: Node + Express + Three.js
 
