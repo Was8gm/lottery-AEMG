@@ -50,31 +50,6 @@ The lottery list information is in the server/data/user.xlsx file, information c
 Prize information configuration
 Prize information is filled in the server/config.js file, and the file name cannot be modified.
 
-// Prize information, the first item is reserved and cannot be modified. Other items can be modified as required
-// Prize in
-let prizes = [{
-        type: 0,
-        count: 1000,
-        title: "",
-        text: "Special Price"
-    },
-    {
-        type: 1,
-        count: 2,
-        text: "Special Price"
-        title: "Mystery jackpot"
-        img: "../img/secrit.jpg"
-    },
-    {
-        type: 2,
-        count: 5,
-        text: "First prize"
-        title: "Mac Pro",
-        img: "../img/mbp.jpg"
-    }
-    ...
-];
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The configuration of the number of prizes drawn each time
 EACH_COUNTIt is used to configure the number of lottery draws each time, which corresponds to the prizes one by one. For example, the number of lottery draws corresponding to the above prize configuration is as follows：
 
@@ -84,7 +59,7 @@ Configuration above means the order of the number of prizes to be drawn at one t
 
 Enterprise Identity Configuration
 This identification is used to display on the lottery card.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 const COMPANY = "AEMG";
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Docker Deployment plan
