@@ -43,51 +43,12 @@ npm run build
 npm run serve
 npm start
 
-
-#Directory Structure
-Lottery
-├── product
-│   ├── src
-│   │   ├── lottery
-│   │   │   └── index.js
-│   │   ├── lib
-│   │   ├── img
-│   │   ├── css
-│   │   └── data
-│   ├── package.json
-│   └── webpack.config.js
-├── server
-│   ├── config.js
-│   ├── server.js
-│   └── package.js
---product is Front-end page directory
---server is Server directory
---config is Profile for prize information
-
 Configuration Information
 Lottery personnel list information configuration
 The lottery list information is in the server/data/user.xlsx file, information could only fill in base on the format, file name and title are not able to revise
 
 Prize information configuration
 Prize information is filled in the server/config.js file, and the file name cannot be modified.
-
-The configuration of the prizes is described as follows:
-
-Parameter	Value Type	Description
-----------------------------------------------------------------------------------------------------------------
-      |        | Type of prize, unique identifier, 
- type | Number | 0 is the placeholder for the default 
-      |        | special prize, other prizes cannot be used	
-------+--------+------------------------------------------------------------------------------------------------
-count	| Number | Prizes amount
-------+--------+------------------------------------------------------------------------------------------------
-text	| String | Prizes name
-------+--------+------------------------------------------------------------------------------------------------
-title	| String | Prizes description
-------+--------+------------------------------------------------------------------------------------------------
-img	  | String | Image URL of the prize, image is underimg catalog
-----------------------------------------------------------------------------------------------------------------
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Prize information, the first item is reserved and cannot be modified. Other items can be modified as required
 // Prize in
@@ -159,26 +120,7 @@ Execute the following command to tag the Docker mirror image and push it to the 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 It will tag the Docker mirror image and push it to the remote Docker repository, please build up your repo at https://hub.docker.com/ if you want to us Docker official hub.
 
-Ensure it has a file named docker-compose.yml and add below information:
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-version: '3.8'
 
-volumes:
-  lottery_log:
-
-services:
-  lottery:
-    container_name: lottery
-    expose:
-      - 8888
-    ports:
-      - "28458:8888"
-      - "443:443"
-    volumes:
-      - "lottery_log:/var/log"
-    image: "panda1024/lottery:[TAG]" 
-    restart: always
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Kindly take note that [TAG] should be replaced with the name of the mirror image you pushed to the Docker repository
 
 Run the following command in the project directory on the server to deploy the application using Docker Compose:
