@@ -7,7 +7,8 @@ Thanks for the origin developers contribution.
 I just did some style changes.
 so  probably it till has a similar way in operation
 # Preview
-
+[!image]https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Page.png
+[!image]https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Page2.png
 # Technology Stack
 Technology stack: Node + Express + Three.js
 
@@ -21,7 +22,7 @@ The winner will not participate in the drawing, and the drawing person can be dr
 Refresh or trun off the server will save the winner data and will not resrt the lottery data, only by click the reset button on the page can the lottery data be reset
 The number of prizes is able to configure
 After all the prizes have been drawn, you can continue to draw special prizes(For example:Red pockets, additional prizes, etc). By default, one is extracted at once
-#Preview
+
 
 
 # install
