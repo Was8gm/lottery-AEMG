@@ -24,7 +24,7 @@ After all the prizes have been drawn, you can continue to draw special prizes(Fo
 
 
 #nstall
-git clone https://github.com/moshang-xc/lottery.git
+git clone https://github.com/Was8gm/lottery-AEMG.git
 
 cd lottery
 
