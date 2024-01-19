@@ -49,7 +49,7 @@ The lottery list information is in the server/data/user.xlsx file, information c
 
 Prize information configuration
 Prize information is filled in the server/config.js file, and the file name cannot be modified.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Prize information, the first item is reserved and cannot be modified. Other items can be modified as required
 // Prize in
 let prizes = [{
@@ -77,7 +77,7 @@ let prizes = [{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The configuration of the number of prizes drawn each time
 EACH_COUNTIt is used to configure the number of lottery draws each time, which corresponds to the prizes one by one. For example, the number of lottery draws corresponding to the above prize configuration is as follows：
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 const EACH_COUNT = [1, 1, 5];
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Configuration above means the order of the number of prizes to be drawn at one time is：one special prize per time, one grand prize per time and 5 first prize per time.
@@ -102,20 +102,20 @@ Download and unzip the source code for the project
 Access the project directory after unzipped the file
 
 Execute the following command to build the Docker mirror image:
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ./build.sh [TAG]
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 It will use Dockerfile to set up the Docker mirror image named lottery:[TAG]. If no tag is specified, the 'latest' tag is used by default
 
 Execute the following command to run the local container:
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ./dev.sh [TAG]
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This will start the container and deploy the application in the Docker container. You can test loacally to ensure all running fulently.
 Please be pay attention that all applicaiton in the container will monitor port 8888 and port 443.
 
 Execute the following command to tag the Docker mirror image and push it to the remote Docker repository
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ./tagpush.sh [TAG]
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 It will tag the Docker mirror image and push it to the remote Docker repository, please build up your repo at https://hub.docker.com/ if you want to us Docker official hub.
@@ -130,7 +130,7 @@ This will start a Docker Compose stack and deploy the project into it. Note that
 License
 MIT
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 moshang-xc.github.io/lottery/
 Topics
 nodejs threejs lottery luckydraw lucky prizes lucky-wheel
