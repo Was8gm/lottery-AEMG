@@ -24,8 +24,10 @@ The number of prizes is able to configure
 After all the prizes have been drawn, you can continue to draw special prizes(For example:Red pockets, additional prizes, etc). By default, one is extracted at once
 
 
-
-# install
+# Directory Structure
+![image](https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Structure_1.png)
+![image](https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Structure_2.png)
+# Install
 git clone https://github.com/Was8gm/lottery-AEMG.git
 
 cd lottery
