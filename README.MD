@@ -1,4 +1,4 @@
-#Lottery program
+# Lottery program
 Thanks for the origin developers contribution.
 @moshang-xc moshang 
 @dependabot[bot]
@@ -6,8 +6,9 @@ Thanks for the origin developers contribution.
 @JessyTsu1
 I just did some style changes.
 so  probably it till has a similar way in operation
+# Preview
 
-#Technology Stack
+# Technology Stack
 Technology stack: Node + Express + Three.js
 
 Server: Express + Node
@@ -23,7 +24,7 @@ After all the prizes have been drawn, you can continue to draw special prizes(Fo
 #Preview
 
 
-#nstall
+# install
 git clone https://github.com/Was8gm/lottery-AEMG.git
 
 cd lottery
