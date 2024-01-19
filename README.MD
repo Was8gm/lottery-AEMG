@@ -28,23 +28,32 @@ After all the prizes have been drawn, you can continue to draw special prizes(Fo
 ![image](https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Structure_1.png)
 ![image](https://github.com/Was8gm/lottery-AEMG/blob/main/README_img/Structure_2.png)
 # Install
-git clone https://github.com/Was8gm/lottery-AEMG.git
+git clone https://github.com/Was8gm/lottery-AEMG.git  
 
-cd lottery
-/Server plugin installation/
-cd server
-npm install
+cd lottery  
 
-/Front-end plugin installation/
-cd ../product
-npm install
+Server plugin installation  
 
-/Package/
-npm run build
+cd server  
 
-/Running/
-npm run serve
-npm start
+npm install  
+
+Front-end plugin installation  
+
+cd ../product  
+
+npm install  
+
+Package  
+
+npm run build  
+
+Running  
+
+npm run serve  
+
+npm start  
+
 
 Configuration Information
 Lottery personnel list information configuration
