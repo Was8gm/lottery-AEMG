@@ -31,19 +31,18 @@ After all the prizes have been drawn, you can continue to draw special prizes(Fo
 git clone https://github.com/Was8gm/lottery-AEMG.git
 
 cd lottery
-
-//Server plugin installation
+/Server plugin installation/
 cd server
 npm install
 
-//Front-end plugin installation
+/Front-end plugin installation/
 cd ../product
 npm install
 
-//Package
+/Package/
 npm run build
 
-//Running
+/Running/
 npm run serve
 npm start
 
